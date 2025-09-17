@@ -3,7 +3,8 @@
   "version": "0.1.3",
   "description": "用於手機版（m.gamer.com.tw）的巴哈深色模式。支援哈拉區文章、文章列表、通知列表。",
   "scripts": {
-    "version": "sync-version baha-dark-mode.user.css && git add ."
+    "version": "sync-version baha-dark-mode.user.css && git add .",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -13,5 +14,6 @@
   "license": "MIT",
   "devDependencies": {
     "sync-version": "^1.0.1"
-  }
+  },
+  "private": true
 }
