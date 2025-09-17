@@ -22,10 +22,13 @@
   }
   body {
     background: url(https://i2.bahamut.com.tw/forum/html_bg_dark.gif) center top #111111;
-    color: #f7f7f7;
+    color: var(--box-fg);
   }
   a {
     color: #00B0B6;
+  }
+  font[color="unset"] {
+    color: var(--box-fg);
   }
   .mb-article-stickybar .article-stickybar-left p {
     color: #f7f7f7;
