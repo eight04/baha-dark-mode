@@ -30,6 +30,11 @@
   font[color="unset"] {
     color: var(--box-fg);
   }
+
+  .open-app {
+    display: none;
+  }
+
   .mb-article-stickybar .article-stickybar-left p {
     color: #f7f7f7;
   }
