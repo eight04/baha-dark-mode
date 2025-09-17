@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name           巴哈深色模式
+@namespace      https://github.com/eight04
+@version        0.1.0
+@description    巴哈哈拉區手機版深色模式
+@author         eight04 <eight04@gmail.com>
+==/UserStyle== */
+
+@-moz-document domain("m.gamer.com.tw") {
+  :root {
+    --box-fg: #f7f7f7;
+    --box-bg: #272728;
+    --box-bg-2: #1c1c1c;
+    --box-bg-3: rgba(0, 177, 183, 0.3);
+    --sep-fg: #444;
+    --btn-bg: #272728;
+    --btn-fg: #a7a6ad;
+    --sticky-bg: #1c1c1c;
+    --input-bg: #111111;
+    --input-fg: #c6ccd2;
+    --head-bg: #213233;
+  }
+  body {
+    background: url(https://i2.bahamut.com.tw/forum/html_bg_dark.gif) center top #111111;
+    color: #f7f7f7;
+  }
+  a {
+    color: #00B0B6;
+  }
+  .mb-article-stickybar .article-stickybar-left p {
+    color: #f7f7f7;
+  }
+  .mb-article-stickybar {
+    background: #1c1c1c;
+  }
+  .mb-article-stickybar .article-breadcrumbs a {
+    color: #C7C6CB;
+  }
+  .cbox {
+    background: #272728;
+    border-color: #444;
+  }
+  .article-cont .title-box,
+  .cbox_msg2_open,
+  .C2 div {
+    border-color: #444;
+  }
+  h1.c-title {
+    color: #f7f7f7;
+    text-shadow: none;
+  }
+  .cbox_msg2 {
+    background: #1c1c1c;
+  }
+  .cbox_msg2_enter input {
+    background: #111111;
+    color: #c6ccd2;
+    border: none;
+    box-shadow: inset 0 -1px 3px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2)
+  }
+  .article-cont .cbox_txt .del_adm {
+    color: rgb(from currentColor r g b / 0.5);
+  }
+  .baha_interactiveBtn .c-tool-item.c-gp a span.tool-icon, .baha_interactiveBtn .c-tool-item.c-bp a span.tool-icon {
+    background: none;
+    font-family: 'Material Icons';
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    &::before {
+      content: "";
+    }
+  }
+  .baha_interactiveBtn .c-tool-item.c-bp a span.tool-icon {
+    color:   #00B0B6;
+    border-color:  #00B0B6;
+  }
+  .baha_interactiveBtn .c-tool-item.c-bp span.tool-num.gp-count {
+    color:   #00B0B6;
+  }
+  .halac_form {
+    background-color: var(--box-bg);
+  }
+  .halac_form select {
+    background-color: inherit;
+    color: var(--btn-fg);
+    border-color: var(--sep-fg);
+  }
+  .index-boxC a {
+    background-color: var(--box-bg);
+    box-shadow: none;
+  }
+  .article-nav-bottom {
+    background-color: var(--sticky-bg);
+    border-color: var(--sep-fg);
+  }
+  .article-nav-bottom .reply-input textarea {
+    background-color: var(--input-bg);
+    color: var(--input-fg);
+    border-color: var(--sep-fg);
+  }
+  
+  /* artical list */
+  .forum-keyword {
+    background-color: var(--sticky-bg);
+  }
+  
+  .halab_form {
+    background-color: var(--head-bg);
+  }
+  .halab_form select,
+  .halab_form input {
+    background-color: var(--input-bg);
+    color: var(--input-fg);
+    border-color: var(--sep-fg);
+  }
+  
+  .hala_blist a {
+    background-color: var(--box-bg);
+    color: var(--box-fg);
+  }
+  .hala_blist li:nth-child(2n+1) a {
+    background-color: var(--box-bg-2);
+  }
+  .hala_blist h4 {
+    font-weight: normal;
+  }
+  
+  header {
+    background-color: #125b6b;
+  }
+  
+  /* load more area */
+  .bempty {
+    background-color: var(--box-bg);
+  }
+  
+  #TOP_menu {
+    background-color: var(--sep-fg);
+  }
+  .TOP_menu2 li {
+    background-color: var(--sticky-bg);
+  }
+  .TOP_menu2 .now a {
+    color: var(--box-fg);
+  }
+  .TOP_menu2 li a {
+    color: rgb(from var(--box-fg) r g b / 0.5);
+  }
+  .msg li {
+    background-color: var(--box-bg);
+    &.unread {
+      background-color: var(--box-bg-3);
+    }
+  }
+
+  /* action menu */
+  .baha_interactiveBtn .morebtns a {
+    background-color: var(--btn-bg);
+    color: var(--btn-fg);
+    border-color: var(--sep-fg);
+  }
+  .baha_interactiveBtn .morebtns {
+    border-color: var(--sep-fg);
+  }
+} 
