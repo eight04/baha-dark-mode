@@ -5,6 +5,11 @@
 
 <img width="1080" height="2408" alt="Image" src="https://github.com/user-attachments/assets/a0e471de-b554-4460-9b0f-53708e103523" />
 
+Installation
+------------
+
+[baha-dark-mode.user.css](https://github.com/eight04/baha-dark-mode/raw/refs/heads/master/baha-dark-mode.user.css)
+
 Changelog
 ---------
 
