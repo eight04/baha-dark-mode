@@ -180,4 +180,16 @@
   .baha_interactiveBtn .morebtns {
     border-color: var(--sep-fg);
   }
+
+  @keyframes highlight {
+    from {
+      background-color: oklch(from var(--box-bg) calc(l + 0.1) c h);
+    }
+
+    to {
+      background-color: var(--box-bg);
+    }
+  }
+
+
 } 
