@@ -27,6 +27,9 @@
   a {
     color: #00B0B6;
   }
+  td[bgcolor] {
+    background-color: transparent;
+  }
   /* Firefox doesn't support attr color: https://bugzilla.mozilla.org/show_bug.cgi?id=1448251 */
   @supports (color: attr(color type(<color>))) {
     font[color] {
