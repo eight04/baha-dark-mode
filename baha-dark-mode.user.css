@@ -27,15 +27,20 @@
   a {
     color: #00B0B6;
   }
-  font[color] {
-    filter: invert(100%) hue-rotate(180deg);
-  } 
   /* Firefox doesn't support attr color: https://bugzilla.mozilla.org/show_bug.cgi?id=1448251 */
   @supports (color: attr(color type(<color>))) {
     font[color] {
-      filter: none;
       color: hsl(from attr(color type(<color>)) h s calc(100 - l));
     }
+  }
+  @supports not (color: attr(color type(<color>))) {
+    font[color] {
+      filter: invert(100%) hue-rotate(180deg);
+
+      font[color] {
+        filter: none;
+      }
+    } 
   }
 
   .open-app {
