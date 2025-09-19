@@ -207,5 +207,8 @@
     }
   }
 
+  .article_gamercard {
+    background-color: var(--box-bg-2);
+  }
 
 } 
