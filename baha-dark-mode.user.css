@@ -266,4 +266,10 @@
     border-color: var(--sep-fg);
   }
 
+  .index-topic a {
+    background-color: var(--box-bg);
+    color: var(--box-fg);
+    box-shadow: none;
+  }
+
 } 
