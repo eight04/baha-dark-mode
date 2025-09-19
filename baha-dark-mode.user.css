@@ -211,4 +211,20 @@
     background-color: var(--box-bg-2);
   }
 
+  /* menu */
+  .SubMenu {
+    background-color: var(--btn-bg);
+  }
+  .SubMenu_list .fa {
+    filter: invert(1);
+  }
+  .gtm-nav-menu,
+  .gtm-nav-backpc{
+    color: var(--btn-fg);
+
+    &[href="https://ani.gamer.com.tw/"] {
+      filter: grayscale(0.3);
+    }
+  }
+
 } 
