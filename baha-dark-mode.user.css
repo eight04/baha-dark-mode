@@ -18,6 +18,7 @@
     --sticky-bg: #1c1c1c;
     --input-bg: #111111;
     --input-fg: #c6ccd2;
+    --input-focus: #00B0B6;
     --head-bg: #213233;
   }
   body {
@@ -26,6 +27,14 @@
   }
   a {
     color: #00B0B6;
+  }
+  input {
+    background-color: var(--input-bg);
+    &:focus-visible {
+      border-color: var(--input-focus);
+      box-shadow: 0 0 0 2px rgb(from var(--input-focus) r g b / 0.3);
+      outline: none;
+    }
   }
   td[bgcolor] {
     background-color: transparent;
@@ -225,6 +234,36 @@
     &[href="https://ani.gamer.com.tw/"] {
       filter: grayscale(0.3);
     }
+  }
+
+  /* fav list */
+  .myfavinput {
+    background-color: var(--input-bg);
+    color: var(--input-fg);
+    border-color: var(--sep-fg);
+  }
+  .my_bo li {
+    background-color: var(--box-bg);
+    border-color: var(--sep-fg);
+  }
+
+  /* board list */
+  .hala_drop select {
+    background-color: var(--input-bg);
+    color: var(--input-fg);
+    border-color: var(--sep-fg);
+  }
+  .hala li {
+    background-color: var(--box-bg);
+  }
+  .hala a:nth-of-type(2) {
+    background-color: var(--box-bg-2);
+  }
+  #BH-pagebtn .no,
+  #BH-pagebtn a{
+    background-color: var(--btn-bg);
+    color: var(--btn-fg);
+    border-color: var(--sep-fg);
   }
 
 } 
