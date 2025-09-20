@@ -20,6 +20,7 @@
     --input-fg: #c6ccd2;
     --input-focus: #00B0B6;
     --head-bg: #213233;
+    --link-fg: #00B0B6;
   }
   body {
     background: url(https://i2.bahamut.com.tw/forum/html_bg_dark.gif) center top #111111;
@@ -272,4 +273,56 @@
     box-shadow: none;
   }
 
+  /* daily */
+  .popup-dailybox .popup-dailybox--width {
+    background-color: var(--box-bg);
+  }
+  .popup-dailybox .popup-dailybox__subtitle {
+    color: var(--box-fg);
+  }
+  .popup-dailybox .popup-dailybox__fulilink {
+    color: var(--box-fg);
+  }
+  .popup-dailybox .popup-dailybox__title {
+    color: #EEC900;
+  }
+  .dialogify {
+    background-color: transparent;
+  }
+  .dialogify .dialogify__body a {
+    color: var(--link-fg);
+  }
+  .dialogify__close {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--link-fg);
+
+    &::before {
+      content: "✕";
+      font-size: 12px;
+      color: var(--link-fg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1;
+    }
+
+    & img {
+      display: none;
+    }
+  }
+  .dailybox .dailybox-day {
+    background-color: var(--box-bg-2);
+  }
+  .dailybox .dailybox-day::after {
+    background-color: oklch(from var(--box-bg) l c h / 0.8);
+  }
+  .dailybox {
+    color: var(--box-fg);
+  }
+  .popup-dailybox .popup-dailybox__btn {
+    background-color: #F08D23;
+  }
 } 
