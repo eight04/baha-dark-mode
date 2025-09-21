@@ -51,11 +51,13 @@
   }
   @supports not (color: attr(color type(<color>))) {
     font[color] {
-      /* FIXME: this will also invert images in <font> */
       filter: invert(100%) hue-rotate(180deg);
 
       font[color] {
         filter: none;
+      }
+      img {
+        filter: invert(100%) hue-rotate(180deg);
       }
     } 
     font[color=unset] {
