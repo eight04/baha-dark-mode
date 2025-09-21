@@ -64,7 +64,9 @@
     }
   }
 
-  .open-app {
+  /* download app banner, button */
+  .open-app,
+  .download-app_box01 {
     display: none;
   }
 
