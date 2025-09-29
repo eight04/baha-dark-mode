@@ -329,4 +329,29 @@
   .popup-dailybox .popup-dailybox__btn {
     background-color: #F08D23;
   }
+
+  /* vote */
+  .vote-block {
+    background-color: var(--box-bg-2);
+    border-color: var(--sep-fg);
+  }
+  .vote-block .c-post__header small {
+    color: inherit;
+    opacity: 0.6;
+  }
+  .vote-item div.form-control {
+    background-color: var(--input-bg);
+    color: var(--input-fg);
+    border-color: var(--sep-fg);
+  }
+  .check-group input[type="checkbox"] + label .label-icon {
+    background-color: var(--input-bg);
+    border-color: var(--sep-fg);
+  }
+  .check-group input[type="checkbox"]:checked + label .label-icon {
+    background-color: var(--box-bg-3);
+    border-color: var(--box-bg-3);
+    color: var(--box-fg);
+  }
+
 } 
