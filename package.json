@@ -1,6 +1,6 @@
 {
   "name": "baha-dark-mode",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "用於手機版（m.gamer.com.tw）的巴哈深色模式。支援哈拉區文章、文章列表、通知列表。",
   "scripts": {
     "version": "sync-version baha-dark-mode.user.css && git add .",
