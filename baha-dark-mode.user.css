@@ -61,8 +61,8 @@
       }
     } 
     font[color=unset] {
-      filter: none;
-      color: var(--box-fg);
+      /* invert lightness */
+      color: hsl(from var(--box-fg) h s calc(100 - l));
     }
   }
 
