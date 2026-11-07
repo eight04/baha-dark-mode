@@ -147,8 +147,15 @@
     color: var(--input-fg);
     border-color: var(--sep-fg);
   }
+
+  /* print */
+  @media print {
+    .article-nav-bottom, header {
+      position: static!important;
+    }
+  }
   
-  /* artical list */
+  /* article list */
   .forum-keyword {
     background-color: var(--sticky-bg);
   }
